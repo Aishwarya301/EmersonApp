@@ -1,0 +1,10 @@
+<h2>Customer Profile</h2>
+<p><b>Id</b>={{cust1.id}}</p>
+<p><b>Name</b>={{cust1.name}}</p>
+<p><b>contact</b>= {{cust1.contactnumber}}</p>
+<p><b>Mail</b>={{cust1.email}}</p>
+<hr>
+<a class="btn btn-success" [routerLink]="['/update',cust1.id]">Update</a> |
+<a class="btn btn-success" [routerLink]="['/remove',cust1.id]"  >Remove</a> 
+
+

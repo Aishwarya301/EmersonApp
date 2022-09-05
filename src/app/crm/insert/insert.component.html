@@ -1,0 +1,19 @@
+<!--<h2>Insert Data</h2>
+<p><b>Id </b><input [(ngModel)] = "customer.id"></p>
+<p><b>Name </b><input ></p>
+<p><b>Contact Number </b><input ></p>
+<p><b>Email </b><input ></p>
+<button class=" btn btn-success" (click)="insertRecord()">Insert</button><br><br>
+<hr>-->
+<form (ngSubmit)="onSubmitNewCustomer()">
+<label>Id</label>
+<input type="text" [(ngModel)]="customer.id" placeholder="Enter Id" id="id" name="id">
+<label>Name</label>
+
+<input type="text" [(ngModel)]="customer.name" placeholder="Enter Name" id="name" name="name">
+<label>Email</label>
+<input type="text" [(ngModel)]="customer.email" placeholder="Enter Email" id="email" name="email">
+<label>Mobile</label>
+<input type="text" [(ngModel)]="customer.contact" placeholder="Enter Mobile" id="contact" name="contact">
+<button type="submit">Insert</button>
+</form>

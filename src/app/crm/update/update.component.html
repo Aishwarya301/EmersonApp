@@ -1,0 +1,8 @@
+<h2>Update Profile</h2>
+<p><b>Id </b><input [value]="cust1.id" readonly ></p>
+<p><b>Name </b><input [value]="cust1.name" [(ngModel)]="name"></p>
+<p><b>Contact Number </b><input [value]="cust1.contactnumber" [(ngModel)] = "contact"></p>
+<p><b>Email </b><input [value]="cust1.email" [(ngModel)] = "email"></p>
+<button class=" btn btn-success" (click)="updateRecord(cust1.id)">Update</button><br><br>
+{{updateMessage}}
+<hr>

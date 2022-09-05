@@ -1,0 +1,10 @@
+<div *ngIf="status">
+    <ol>
+    <li *ngFor="let customer of customers">
+        <a [routerLink]="['/customers',customer.id]">{{customer.name}}</a>
+    </li>
+    </ol>
+</div>
+<button (click)="onShow()">Show</button>
+<button (click)="onHide()">Hide</button>
+<button (click) = "onInsert()">Insert</button>
